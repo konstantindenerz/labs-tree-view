@@ -1,0 +1,9 @@
+script(type="text/ng-template",id="tree-view-template")
+  tree-view-item
+  ul(ng-hide='node.details.isClosed')
+    li(ng-repeat="node in node.nodes | orderBy:['details.type', 'key']",ng-include="'tree-view-template'")
+
+h3(ng-hide='vm.cwd.value') Use menu to change directory
+
+ul(ng-show='vm.cwd.value')
+  li(ng-include="'tree-view-template'")
