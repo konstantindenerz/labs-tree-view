@@ -1,0 +1,8 @@
+md-button(layout='row',aria-label='Foo', ng-click='handleClick(node)')
+  div(layout='row', layout-align='')
+    .material-icons(ng-if='node.details.isDirectory && node.details.isClosed') keyboard_arrow_right
+    .material-icons(ng-if='node.details.isDirectory && !node.details.isClosed') keyboard_arrow_down
+    .material-icons(ng-if='node.details.isDirectory') folder
+    .material-icons(ng-if='!node.details.isDirectory') description
+    div(ng-bind='node.key')
+  

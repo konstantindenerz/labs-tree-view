@@ -7,7 +7,7 @@ An example of a tree view built with [Angular.js](https://github.com/angular/ang
 ### Install dependencies
 
 ```
-$ npm i
+$ echo 'grab a ☕' && npm i && bower install
 ```
 
 ### Start desktop application
