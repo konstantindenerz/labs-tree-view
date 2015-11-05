@@ -22,10 +22,12 @@ export function menuRunBlock(gui, nwwindow, cwd, $rootScope, menuService) {
     }
   }));
 
-  menu.createMacBuiltin('tree-view', {
-    hideEdit: true,
-    hideWindow: true
-  });
+  if(menu.createMacBuiltin){
+    menu.createMacBuiltin('tree-view', {
+      hideEdit: true,
+      hideWindow: true
+    });
+  }
 
   menu.append(
     new gui.MenuItem({

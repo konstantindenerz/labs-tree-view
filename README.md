@@ -4,6 +4,8 @@ An example of a fs tree view built with [Angular.js](https://github.com/angular/
 
 ![tree view example](docs/images/tree-view.png)
 
+![tree view example](docs/images/tree-view-win.png)
+
 
 ### Install dependencies
 
